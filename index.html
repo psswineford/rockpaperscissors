@@ -5,19 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/mortal-kombat" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
     <title>Rock Paper Scissors!</title>
 </head>
 
 <body>
     <!-- Select Rock Paper Scissors -->
+    <div class="header">
+        <h1>In the future, war is fought with ROCK PAPER SCISSORS</h1>
+    </div>
     <div>
+        <h1 class="title">Round <span id="current-round">1</span> Fight!</h1>
         <h2>Choose your weapon:</h2>
-        <button id="rock" class="gameBtn" >Rock</button>
-        <button id="paper"class="gameBtn" >Paper</button>
-        <button id="scissors"class="gameBtn" >Scissors</button>
+        <button id="rock" class="gameBtn">&#9994;</button>
+        <button id="paper" class="gameBtn">&#9995;</button>
+        <button id="scissors" class="gameBtn">&#9996;</button>
     </div>
 
-      <!-- Output the result -->
+    <!-- Output the result -->
+    <div>
+        <h2>Results: <span id="results"></span></h2>
+    </div>
     <div>
         <h2>Your Choice: <span id="player-choice"></span></h2>
     </div>
@@ -25,9 +35,7 @@
         <h2>Computers Choice: <span id="computer-choice"></span></h2>
     </div>
 
-    <div>
-        <h2>Results: <span id="results"></span></h2>
-    </div>
+
 
     <div>
         <h2>Player Score: <span id="player-score"></span></h2>
@@ -38,7 +46,7 @@
         <button onclick="window.location.reload()">Reset the Game</button>
     </div>
 
-  
+
     <script src="app.js"></script>
 </body>
 

@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    color: red;
+    text-align: center;
+}
+
+.header {
+    font-family: 'Mortal Kombat 1', sans-serif;
+}
+
+.title {
+    font-family: 'Mortal Kombat 4', sans-serif;
+}
+
+.gameBtn {
+    background-color: red;
+    border-radius: 5px;
+    font-size: 40px;
+    width: 90px;
+    height: 90px;
+}

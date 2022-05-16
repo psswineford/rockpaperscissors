@@ -3,6 +3,8 @@ const computerChoiceDisplay = document.getElementById('computer-choice');
 const resultsDisplay = document.getElementById('results');
 const playerScoreDisplay = document.getElementById('player-score');
 const aiScoreDisplay = document.getElementById('ai-score');
+const roundDisplay = document.getElementById('current-round');
+let currentRound = 2;
 let playerChoice = '';
 let computerChoice = '';
 let playerScore = 1;
@@ -39,34 +41,42 @@ function randonComputerChoice() {
 function compareChoices() {
     if (playerChoice === computerChoice) {
     resultsDisplay.innerHTML = "Tie";
+    roundDisplay.innerHTML= currentRound ++;
     }
 
     if (playerChoice === "rock" && computerChoice === "paper") {
         resultsDisplay.innerHTML = "You Lost";
         aiScoreDisplay.innerHTML = aiScore ++;
+        roundDisplay.innerHTML= currentRound ++;
     }
     if (playerChoice === "rock" && computerChoice === "scissors") {
         resultsDisplay.innerHTML = "You Win!";
         playerScoreDisplay.innerHTML = playerScore ++;
+        roundDisplay.innerHTML= currentRound ++;
     }
 
     if (playerChoice === "paper" && computerChoice === "rock") {
         resultsDisplay.innerHTML = "You Win!";
         playerScoreDisplay.innerHTML = playerScore ++;
+        roundDisplay.innerHTML= currentRound ++;
     }
 
     if (playerChoice === "paper" && computerChoice === "scissors") {
         resultsDisplay.innerHTML = "You Lost!";
         aiScoreDisplay.innerHTML = aiScore ++;
+        roundDisplay.innerHTML= currentRound ++;
     }
 
     if (playerChoice === "scissors" && computerChoice === "rock") {
         resultsDisplay.innerHTML = "You Lost!";
         aiScoreDisplay.innerHTML = aiScore ++;
+        roundDisplay.innerHTML= currentRound ++;
     }
 
     if (playerChoice === "scissors" && computerChoice === "paper") {
         resultsDisplay.innerHTML = "You Win!";
         playerScoreDisplay.innerHTML = playerScore ++;
+        roundDisplay.innerHTML= currentRound ++;
     }
 }
+
